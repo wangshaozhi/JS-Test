@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .test {
+            width: 400px;
+            height: 400px;
+            position: absolute;
+            /* line-height: 400px; */
+            /* text-align: center; */
+            background-color: pink;
+        }
+
+        /* .test{
+            width: 400px;
+            height: 400px;
+    		display:flex;
+            align-items:center;
+            justify-content:center;
+            background-color: pink;
+		}	 */
+
+        /* .test {
+            width: 400px;
+            height: 400px;
+            display: table-cell;
+            text-align: center;
+            vertical-align: middle;
+            background-color: pink;
+        } */
+
+
+        /* .box {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-left: -100px;
+            margin-top: -100px;
+            background-color: red;
+        } */
+        /* 
+        .box {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            background-color: red;
+        } */
+
+        /* .box {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            top: calc(50%  - 100px);
+            left: calc(50% - 100px);
+            background-color: red;
+        } */
+
+        /* .box {
+            padding: 10px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: red;
+        } */
+
+        .box {
+            /* padding: 10px; */
+            /* font-size: 16px;
+            line-height: inherit;
+            display: inline-block;
+            vertical-align: middle;
+            background-color: red; */
+            position: absolute;
+            /* top: 50%; */
+            /* left: 50%; */
+            background-color: red;
+        }
+
+        .test>div:not(.box) {
+            background-color: lightgreen;
+        }
+
+        /* .test {
+            width: 200px;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        } */
+
+        /* .word {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        } */
+
+        /* .word {
+            margin: 0 auto;
+        } */
+    </style>
+</head>
+
+<body>
+
+    <div class="test">
+        <div class="box">box1</div>
+        <div>box2</div>
+    </div>
+    <script src="./20210324.js"></script>
+</body>
+
+</html>

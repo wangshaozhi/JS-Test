@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div1 {
+            border: 10px solid lightblue;
+            color: red;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="div1">DIV啊，哈哈哈哈</div>
+
+    <!-- <script src="../js/20210327.js"></script> -->
+
+    <!-- <script>
+        window.id = 'gloabalName';
+        let divObj = document.getElementById('div1');
+        divObj.onclick = function () {
+            console.log(this.id);
+            let that = this;
+            var callback = function () {
+                console.log(that.id);
+            }
+            callback()
+        }
+    </script> -->
+
+    <!-- <script>
+        function TreeNode(val, left, right) {
+            this.val = (val === undefined ? 0 : val)
+            this.left = (left === undefined ? null : left)
+            this.right = (right === undefined ? null : right)
+
+        }
+        let arrlists = new Array();
+        let list = new Array();
+        let temp = 0;
+        var pathSum = function (root, target) {
+            console.log(root);
+            if (root === null) {
+                return null;
+            };
+            list.push(root.val);
+            target -= root.val;
+            if (target == 0 && root.left == null && root.right == null) {
+                lists.push(new Array(list));
+            }
+            pathSum(root.left);
+            pathSum(root.left);
+            list.slice(-1);
+        }
+        let c4 = new TreeNode(4, 5, 1);
+        let c3 = new TreeNode(8, 13, c4);
+        let c2 = new TreeNode(11, 7, 2);
+        let c1 = new TreeNode(4, c2, null);
+
+        let root = new TreeNode(5, c1, c3);
+
+        let sum = 22;
+        pathSum(root, 22);
+    </script> -->
+
+    <script>
+        // let getId = function(id){
+        //     return document.getElementById(id);
+        // }
+        // let res = getId('div1')
+        // console.log(res);
+
+        // document.getElementById = (function (fn) {
+        //     return function () {
+        //         return fn.apply(document, arguments);
+        //     }
+        // })(document.getElementById)
+        // let getId = document.getElementById;
+        // console.log(getId);
+        // console.log(getId('div1'));
+
+        let getById = document.getElementById;
+        console.log(getById.call(document, 'div1'));
+        // console.log(getById('div1'));
+        console.log(Math.max.apply(null, [1, 2, 3, 4, 5]));
+    </script>
+</body>
+
+</html>
